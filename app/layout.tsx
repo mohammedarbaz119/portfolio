@@ -5,10 +5,10 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "My portfolio",
+  title: "Arbaz's Portfolio",
   description: "portfolio of Mohammed Arbaz",
   icons: {
-    icon: '/favicon.png',
+    icon: '/favicon.ico',
   },
 };
 
