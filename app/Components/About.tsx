@@ -1,6 +1,3 @@
-import React from "react"
-import Image from "next/image"
-
 const skills = [
   { skill: "HTML" },
   { skill: "CSS" },
@@ -38,15 +35,13 @@ const AboutSection = () => {
             <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
               Get to know me!
             </h1>
-            <p>
+            <p className="ml-2 mr-1">
               Hi,My name is Mohammed Arbazuddin Qureshi <br /> I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>{" "}
               Computer Science Student currently based in Hyderabad,India
-              
-              
             </p>
             <br />
-            <p>
+            <p className="mx-1">
               I am currently in my Third year of My Computer science bachelor&apos;s degree in Muffakham Jah College 
               of Engg and Technology
             </p>

@@ -43,7 +43,7 @@ const projects: project_description[] = [
 const Projects = () => {
   return (
     <section id="projects">
-      <h1 className="my-10 text-center font-bold text-4xl">
+      <h1 className="my-10 text-center font-bold text-3xl">
         Personal and Collaborated Projects
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
       </h1>
@@ -53,8 +53,8 @@ const Projects = () => {
           return (
             <div key={idx}>
               <Revealer offset="-200px 0px -200px 0px">
-                <div className="flex flex-col m-6 md:flex-row md:space-x-8 mb-2">
-                  <div className="ml-4 md:w-1/2 ">
+                <div className="flex flex-col m-4 md:flex-row md:space-x-8 mb-2">
+                  <div className=" md:w-1/2 ">
                     {project.link ? (
                       <Link href={project.link}>
                         <Image

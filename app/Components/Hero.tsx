@@ -26,17 +26,13 @@ const Hero = () => {
             </span>
            
           </p>
-          <Link
-            to="project"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
+          <a
+           href={"/resume-arbaz.pdf"}
+            className="text-neutral-100 font-semibold px-6 py-3 bg-sky-700  rounded shadow hover:bg-sky-600"
+          download={"resume-arbaz.pdf"}
           >
             Projects
-          </Link>
+          </a>
         </div>
       </div>
       <div className="flex flex-row items-center text-center justify-center  ">
