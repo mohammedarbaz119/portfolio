@@ -52,7 +52,7 @@ const Projects = () => {
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
-              <Revealer offset="-200px 0px -200px 0px">
+              <Revealer offset="-100px 0px -100px 0px">
                 <div className="flex flex-col m-4 md:flex-row md:space-x-8 mb-2">
                   <div className=" md:w-1/2 ">
                     {project.link ? (
