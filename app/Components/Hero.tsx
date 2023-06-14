@@ -1,40 +1,39 @@
-"use client" 
+"use client"
 // this is a client component
-import React, { useEffect, useState } from "react"
+import React, { AnimationEvent, AnimationEventHandler, useEffect, useState } from "react"
 import Image from "next/image"
 import { Link } from "react-scroll/modules"
 import { HiArrowDown } from "react-icons/hi"
 
 const Hero = () => {
 
-  const intro:string[] = [
-    "Software Developer",
-    "Student",
-    "Web developer",
+  const intro: string[] = [
+    "Computer Science Student",
+     "Web Developer",
   ]
- const [show_idx,setshowidx] = useState(0)
-  const [show,setshow] = useState(intro[show_idx])
+  const [show_idx, setshowidx] = useState(0)
+  const [show, setshow] = useState(intro[show_idx])
 
-   const change_text = (event:AnimationEvent)=>{
-    if(event.animationName==='typing'){
-      setshowidx(p=>{
-        if(p===intro.length-1){
+  const change_text = (event: AnimationEvent) => {
+    if (event.animationName === 'typing') {
+      setshowidx(p => {
+        if (p === intro.length - 1) {
           return 0;
-        }else{
-      return p+1
+        } else {
+          return p + 1
         }
       })
-      
+
       setshow(intro[show_idx])
-    
+
     }
-  
-   } 
+
+  }
 
 
 
 
- 
+
 
   return (
     <section id="home">
@@ -51,13 +50,13 @@ const Hero = () => {
         <div className="md:mt-2 md:w-3/5">
           <h2 className="text-2xl font-bold mt-6 md:mt-0 md:text-6xl ">Hi, I&#39;m Mohammed Arbaz!</h2>
           <div className="w-fit">
-             <h4 className="mt-4 mb-6 md:text-2xl font-semibold text-teal-600 animate-typing overflow-hidden whitespace-nowrap border-r-4" onAnimationIteration={change_text}>{show}</h4>
+            <h4 className="mt-4 mb-6 md:text-2xl font-semibold text-sky-800 animate-typing overflow-hidden whitespace-nowrap border-r-4" onAnimationIteration={(e: AnimationEvent) => change_text(e)}>{show}</h4>
           </div>
           <hr />
           <a
-           href={"/resume-arbaz.pdf"}
+            href={"/resume.pdf"}
             className="text-neutral-100 font-semibold px-6 py-3 bg-sky-700  rounded shadow hover:bg-sky-600"
-          download={"resume-arbaz.pdf"}
+            download={"resume.pdf"}
           >
             Resume
           </a>
