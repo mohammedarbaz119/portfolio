@@ -57,7 +57,7 @@ const AboutSection = () => {
                 return (
                   <p
                     key={idx}
-                    className="bg-black px-4 py-2 mr-2 mt-2 text-blue-500/60 rounded font-semibold"
+                    className="bg-slate-500 px-4 py-2 mr-2 mt-2 text-black-600 rounded font-semibold"
                   >
                     {item.skill}
                   </p>
