@@ -54,7 +54,7 @@ const Hero = () => {
           </div>
   <br />
           <a
-            href={"/resume.pdf"}
+            href={"/mohammed-resume.pdf"}
             className="text-neutral-100 font-semibold px-6 py-3 bg-sky-700  rounded shadow hover:bg-sky-600"
             download={"mohammed-resume.pdf"}
           >
