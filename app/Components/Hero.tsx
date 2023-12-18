@@ -49,7 +49,7 @@ const Hero = () => {
         <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
           <div className="md:mx-6">
             <h2 className="text-2xl font-bold mt-6 md:mt-0 md:text-6xl text-black">
-              Hi, I'm Mohammed Arbaz!
+              Hi, I&#39;m Mohammed Arbaz!
             </h2>
             <motion.h4
               className="mt-4 mb-6 md:text-2xl min-h-full font-semibold text-sky-800 overflow-hidden whitespace-nowrap border-r-4 inline-block"

@@ -40,8 +40,9 @@ const AboutSection = () => {
               Science student currently based in Hyderabad, India.
             </p>
             <p className="mx-2 text-sm md:text-base">
-              I am currently in my third year of my Computer Science bachelor's
-              degree at Muffakham Jah College of Engineering and Technology.
+              I am currently in my third year of my Computer Science
+              bachelor&#39;s degree at Muffakham Jah College of Engineering and
+              Technology.
             </p>
           </div>
           <div className="text-center md:w-full md:text-left">
