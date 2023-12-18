@@ -4,7 +4,7 @@ import Link from "next/link";
 import Revealer from "./Revealer";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
-interface project_description {
+interface ProjectDescription {
   name: string;
   description: string;
   image: string;
@@ -12,11 +12,12 @@ interface project_description {
   github: string;
   link?: string;
 }
-const projects: project_description[] = [
+
+const projects: ProjectDescription[] = [
   {
-    name: "Prioritze Future",
+    name: "Prioritize Future",
     description:
-      "Prioritizing tasks is a critical skill for effective time management. By prioritizing tasks, you can ensure that you are spending your time on the most important and urgent tasks, rather than getting bogged down in less important ones. ",
+      "Prioritizing tasks is a critical skill for effective time management. By prioritizing tasks, you can ensure that you are spending your time on the most important and urgent tasks, rather than getting bogged down in less important ones.",
     image: "/proiritze.jpg",
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/Mubashir-Md/Prioritize-Future",
@@ -25,84 +26,100 @@ const projects: project_description[] = [
   {
     name: "Blog App",
     description:
-      "Blog App is an Web app where user can share their posts and follow others users to see their content",
+      "Blog App is a web app where users can share their posts and follow others to see their content.",
     image: "/bloglite.jpg",
-    tech: ["HTML", "Jinja2", "Flask", "BootStrap", "SQLite"],
+    tech: ["HTML", "Jinja2", "Flask", "Bootstrap", "SQLite"],
     github: "https://github.com/asdsyd/bloglite",
   },
   {
     name: "Notes App",
     description:
-      "Notes App is a Web App where we can create notes for us.",
+      "Notes App is a web app where we can create notes for ourselves.",
     image: "/notes.png",
-    tech:["React.js","TypeScript","CSS"],
+    tech: ["React.js", "TypeScript", "CSS"],
     github: "https://github.com/mohammedarbaz119/Notes-App",
   },
 ];
 
+// ... (imports remain unchanged)
+// ... (imports remain unchanged)
+
+// ... (imports remain unchanged)
+
 const Projects = () => {
   return (
-    <section id="projects">
-      <h1 className="my-10 text-center font-bold text-3xl">
+    <section
+      id="projects"
+      className="bg-gray-100 text-neutral-300 py-8 md:py-16"
+    >
+      <h1 className="my-6 text-center font-bold text-3xl text-neutral-400">
         Personal and Collaborated Projects
-        <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
+        <hr className="w-6 h-1 mx-auto my-2 bg-neutral-400 border-0 rounded"></hr>
       </h1>
 
-      <div className="flex flex-col space-y-28">
+      <div className="flex flex-col items-center space-y-8 md:space-y-16">
         {projects.map((project, idx) => {
           return (
-            <div key={idx}>
+            <div key={idx} className="w-full max-w-4xl mx-auto">
               <Revealer offset="-100px 0px -100px 0px">
-                <div className="flex flex-col m-4 md:flex-row md:space-x-8 mb-2">
-                  <div className=" md:w-1/2 ">
-                    {project.link ? (
-                      <Link href={project.link}>
+                <div className="flex flex-col items-center md:flex-row md:space-x-8">
+                  <div className="md:w-1/2 mb-4 md:mb-0 text-center mx-auto">
+                    <a
+                      href={project.link || "#"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="image-container">
                         <Image
                           src={project.image}
-                          alt=""
-                          width={500}
-                          height={500}
-                          className="rounded-xl shadow-xl hover:opacity-70"
+                          alt={project.name}
+                          width={250} // Adjust the width for smaller screens
+                          height={200} // Adjust the height for smaller screens
+                          className="w-full md:w-2/3 lg:w-1/2 rounded-md shadow-md hover:opacity-70"
                         />
-                      </Link>
-                    ) : (
-                      <Image
-                        src={project.image}
-                        alt=""
-                        width={600}
-                        height={600}
-                        className="rounded-xl  hover:opacity-70"
-                      />
-                    )}
+                      </div>
+                    </a>
                   </div>
-                  <div className="mt-8 md:w-1/2">
-                    <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
-                    <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                  <div className="md:w-1/2 md:pl-4 text-left">
+                    <h1 className="text-sm md:text-2xl font-bold mb-2 md:mb-4 text-black">
+                      {project.name}
+                    </h1>
+                    <p className="text-xs md:text-sm leading-6 mb-4 text-neutral-500 dark:text-neutral-600">
                       {project.description}
                     </p>
-                    <p className="text-xl leading-7 mb-4 text-bold flex flex-wrap">
+                    <p className="text-xs md:text-sm leading-6 mb-4 text-bold flex flex-wrap">
                       {project.tech?.map((l) => (
                         <span
-                          className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-bold"
+                          className="bg-gray-800 px-2 py-1 mr-1 mt-1 text-white rounded font-bold"
                           key={l}
                         >
                           {l}
                         </span>
                       ))}
                     </p>
-                    <div className="flex flex-row align-bottom space-x-4">
-                      <Link href={project.github} target="_blank">
+                    <div className="flex flex-row space-x-2">
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <BsGithub
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          size={20}
+                          className="hover:-translate-y-1 transition-transform cursor-pointer text-black"
                         />
-                      </Link>
-                      {project.link&&<Link href={project.link} target="_blank">
-                        <BsArrowUpRightSquare
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>}
+                      </a>
+                      {project.link && (
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <BsArrowUpRightSquare
+                            size={20}
+                            className="hover:-translate-y-1 transition-transform cursor-pointer text-black"
+                          />
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
