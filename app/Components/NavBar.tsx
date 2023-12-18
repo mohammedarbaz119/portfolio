@@ -114,7 +114,7 @@ export default function NavBar() {
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
-    if (scrollTop > 50) {
+    if (scrollTop > 0) {
       setShowNavbar(true);
     } else {
       setShowNavbar(false);

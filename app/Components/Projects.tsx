@@ -41,11 +41,6 @@ const projects: ProjectDescription[] = [
   },
 ];
 
-// ... (imports remain unchanged)
-// ... (imports remain unchanged)
-
-// ... (imports remain unchanged)
-
 const Projects = () => {
   return (
     <section
@@ -63,7 +58,7 @@ const Projects = () => {
             <div key={idx} className="w-full max-w-4xl mx-auto">
               <Revealer offset="-100px 0px -100px 0px">
                 <div className="flex flex-col items-center md:flex-row md:space-x-8">
-                  <div className="md:w-1/2 mb-4 md:mb-0 text-center mx-auto">
+                  <div className="md:w-1/2 mb-4 md:mb-0">
                     <a
                       href={project.link || "#"}
                       target="_blank"
@@ -73,24 +68,25 @@ const Projects = () => {
                         <Image
                           src={project.image}
                           alt={project.name}
-                          width={250} // Adjust the width for smaller screens
-                          height={200} // Adjust the height for smaller screens
-                          className="w-full md:w-2/3 lg:w-1/2 rounded-md shadow-md hover:opacity-70"
+                          width={350} // Adjust the width for small screens
+                          height={300}
+                          // Adjust the height for small screens
+                          className="rounded-xl shadow-xl hover:opacity-70"
                         />
                       </div>
                     </a>
                   </div>
-                  <div className="md:w-1/2 md:pl-4 text-left">
-                    <h1 className="text-sm md:text-2xl font-bold mb-2 md:mb-4 text-black">
+                  <div className="md:w-1/2">
+                    <h1 className="text-xl md:text-4xl font-bold mb-4 md:mb-6 text-neutral-400">
                       {project.name}
                     </h1>
-                    <p className="text-xs md:text-sm leading-6 mb-4 text-neutral-500 dark:text-neutral-600">
+                    <p className="text-base md:text-lg leading-6 mb-4 text-neutral-500 dark:text-neutral-600">
                       {project.description}
                     </p>
-                    <p className="text-xs md:text-sm leading-6 mb-4 text-bold flex flex-wrap">
+                    <p className="text-base md:text-lg leading-6 mb-4 text-bold flex flex-wrap">
                       {project.tech?.map((l) => (
                         <span
-                          className="bg-gray-800 px-2 py-1 mr-1 mt-1 text-white rounded font-bold"
+                          className="bg-gray-700 px-3 py-1 mr-2 mt-2 text-gray-300 rounded font-bold"
                           key={l}
                         >
                           {l}
@@ -104,8 +100,8 @@ const Projects = () => {
                         rel="noopener noreferrer"
                       >
                         <BsGithub
-                          size={20}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer text-black"
+                          size={24}
+                          className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />
                       </a>
                       {project.link && (
@@ -115,8 +111,8 @@ const Projects = () => {
                           rel="noopener noreferrer"
                         >
                           <BsArrowUpRightSquare
-                            size={20}
-                            className="hover:-translate-y-1 transition-transform cursor-pointer text-black"
+                            size={24}
+                            className="hover:-translate-y-1 transition-transform cursor-pointer"
                           />
                         </a>
                       )}
