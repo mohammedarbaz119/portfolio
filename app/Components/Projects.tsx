@@ -101,7 +101,7 @@ const Projects = () => {
                       >
                         <BsGithub
                           size={24}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          className="hover:-translate-y-1 transition-transform cursor-pointer text-black"
                         />
                       </a>
                       {project.link && (
