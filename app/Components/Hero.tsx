@@ -42,6 +42,14 @@ const Hero = () => {
               className="rounded-full"
             />
           </div>
+          <br />
+          <a
+            href={"/resume.pdf"}
+            className="text-neutral-100 font-semibold px-6 py-3 bg-sky-700  rounded shadow hover:bg-sky-600"
+            download={"mohammed-resume.pdf"}
+          >
+            Resume
+          </a>
         </div>
         <div className="md:mt-2 md:w-1/2 flex items-center text-center md:text-left">
           <div className="md:mx-6">
