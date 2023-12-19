@@ -52,7 +52,7 @@ const Hero = () => {
               Hi, I&#39;m Mohammed Arbaz!
             </h2>
             <motion.h4
-              className="mt-4 mb-6 md:text-3xl min-h-full font-semibold text-sky-800 overflow-hidden whitespace-nowrap border-r-4 inline-block"
+              className="mt-4 mb-6 md:text-3xl min-h-full font-semibold text-sky-800 overflow-hidden whitespace-nowrap inline-block"
               initial={{ opacity: 1, scale: 1 }} // Adjust initial properties
               animate={controls}
             >
