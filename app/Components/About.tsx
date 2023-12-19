@@ -35,14 +35,23 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p className="mx-2 text-sm md:text-base">
-              Hi, my name is Mohammed Arbazuddin Qureshi. I am a{" "}
-              <span className="font-bold">highly ambitious</span> Computer
+              Hi, my name is{" "}
+              <span className="font-bold">Mohammed Arbazuddin Qureshi</span>. I
+              am a <span className="font-bold">highly ambitious</span> Computer
               Science student currently based in Hyderabad, India.
             </p>
             <p className="mx-2 text-sm md:text-base">
               I am currently in my third year of my Computer Science
               bachelor&#39;s degree at Muffakham Jah College of Engineering and
               Technology.
+            </p>
+            <p className="mx-2 text-sm md:text-base">
+              I am passionate about building{" "}
+              <span className="font-bold">Web Applications</span> and{" "}
+              <span className="font-bold">Mobile Applications</span> that can
+              help people in their day to day life. I am currently learning{" "}
+              <span className="font-bold">Spring Boot</span> and{" "}
+              <span className="font-bold"> Next.js</span>.
             </p>
           </div>
           <div className="text-center md:w-full md:text-left">
