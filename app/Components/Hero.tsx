@@ -62,7 +62,7 @@ const Hero = () => {
               <a
                 href={"/resume.pdf"}
                 className="text-neutral-100 font-semibold px-6 py-3 bg-sky-700 rounded shadow hover:bg-sky-600 mt-2 md:mt-0"
-                download={"mohammed-resume.pdf"}
+                download={"resume.pdf"}
               >
                 Resume
               </a>

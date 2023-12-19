@@ -39,6 +39,31 @@ const projects: ProjectDescription[] = [
     tech: ["React.js", "TypeScript", "CSS"],
     github: "https://github.com/mohammedarbaz119/Notes-App",
   },
+  {
+    name: "Portfolio",
+    description: "This is my portfolio website",
+    image: "/portfolio.png",
+    tech: ["React.js", "Next.js", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/mohammedarbaz119/portfolio",
+    link: "https://portfolio-mohammedarbaz119.vercel.app/",
+  },
+  {
+    name: "cropSmart",
+    description:
+      "This research project harnesses machine learning to aid Indian farmers by enhancing Crop and Fertilizer Recommendation Systems. It analyzes soil quality and mineral content data to recommend crops and fertilizers. The project also utilizes image recognition to swiftly diagnose crop diseases from user-uploaded images, ultimately boosting agricultural productivity and empowering farmers with critical decision-making insights.",
+    image: "/cropSmart.png",
+    tech: ["Flask", "Python", "HTML", "CSS", "JavaScript", "Scikit-learn"],
+    github: "https://github.com/nihal3000/harvestify",
+    link: "https://cropsmart-r9fx.onrender.com/",
+  },
+  {
+    name: "MovieReviews",
+    description:
+      "MovieReviews is a web app where users can see the reviews of the movies and can also add their reviews.",
+    image: "/rveiewsapp.png",
+    tech: ["React.js", "Spring boot", "MongoDB"],
+    github: "https://github.com/mohammedarbaz119/Spring-Boot",
+  },
 ];
 
 // ... (previous imports remain unchanged)
