@@ -16,19 +16,6 @@ module.exports = {
             transform: 'translateY(0)'
           }
         },
-        typing: {
-          "0%": {
-            width: "0%",
-            visibility: "hidden"
-          },
-          '33%': {
-            width: '100%',
-          },
-          '66%':{width:'100%'},
-          "100%": {
-            width: "0%"
-          }
-        },
         blink: {
           "50%": {
             borderColor: "transparent"
@@ -44,7 +31,6 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       animation: {
-        'typing': "typing 6s steps(50) infinite alternate, blink .8s infinite",
         'slide-up': 'slide-up 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards',
       },
     },

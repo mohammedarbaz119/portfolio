@@ -41,6 +41,8 @@ const projects: ProjectDescription[] = [
   },
 ];
 
+// ... (previous imports remain unchanged)
+
 const Projects = () => {
   return (
     <section
@@ -48,35 +50,28 @@ const Projects = () => {
       className="bg-gray-100 text-neutral-300 py-8 md:py-16"
     >
       <h1 className="my-6 text-center font-bold text-3xl text-neutral-400">
-        Personal and Collaborated Projects
+        Projects
         <hr className="w-6 h-1 mx-auto my-2 bg-neutral-400 border-0 rounded"></hr>
       </h1>
 
       <div className="flex flex-col items-center space-y-8 md:space-y-16">
         {projects.map((project, idx) => {
           return (
-            <div key={idx} className="w-full max-w-4xl mx-auto">
+            <div key={idx} className="w-full max-w-4xl mx-auto px-2">
               <Revealer offset="-100px 0px -100px 0px">
                 <div className="flex flex-col items-center md:flex-row md:space-x-8">
-                  <div className="md:w-1/2 mb-4 md:mb-0">
-                    <a
-                      href={project.link || "#"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <div className="image-container">
-                        <Image
-                          src={project.image}
-                          alt={project.name}
-                          width={350} // Adjust the width for small screens
-                          height={300}
-                          // Adjust the height for small screens
-                          className="rounded-xl shadow-xl hover:opacity-70"
-                        />
-                      </div>
-                    </a>
+                  <div className="w-full md:w-1/2 mb-4 md:mb-0">
+                    <div className="image-container">
+                      <Image
+                        src={project.image}
+                        alt={project.name}
+                        width={350}
+                        height={300}
+                        className="rounded-xl shadow-xl hover:opacity-70"
+                      />
+                    </div>
                   </div>
-                  <div className="md:w-1/2">
+                  <div className="w-full md:w-1/2">
                     <h1 className="text-xl md:text-4xl font-bold mb-4 md:mb-6 text-neutral-400">
                       {project.name}
                     </h1>
@@ -112,7 +107,7 @@ const Projects = () => {
                         >
                           <BsArrowUpRightSquare
                             size={24}
-                            className="hover:-translate-y-1 transition-transform cursor-pointer"
+                            className=" text-black hover:-translate-y-1 transition-transform cursor-pointer"
                           />
                         </a>
                       )}
