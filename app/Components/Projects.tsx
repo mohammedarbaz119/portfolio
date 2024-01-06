@@ -210,43 +210,20 @@ const projects: ProjectDescription[] = [
 ];
 
 const Projects = () => {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { delay: 0.5, duration: 1.5 } },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: -20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
-    },
-  };
+  const textColor = "text-blue-400";
 
   return (
-    <motion.section
-      id="projects"
-      className="bg-black text-white py-8 md:py-16 relative"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-    >
-      <div className="container mx-auto relative z-10">
-        <h1 className="my-6 text-center font-bold text-4xl md:text-5xl text-white relative z-10">
+    <section id="projects" className="bg-black text-white py-8 md:py-10">
+      <div className="container mx-auto">
+        <h1 className="my-6 text-center font-bold text-4xl md:text-5xl text-white">
           My Projects
           <hr className="w-16 h-1 mx-auto my-2 bg-white border-0 rounded"></hr>
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
-            <motion.div
-              key={idx}
-              className="bg-gray-800 rounded-lg p-6 relative z-10"
-              variants={itemVariants}
-            >
-              <div className="border border-blue-500 rounded-lg absolute inset-0 -z-1"></div>
-              <h1 className="text-xl md:text-2xl font-bold mb-2">
+            <div key={idx} className={`rounded-lg p-6 border border-blue-500`}>
+              <h1 className={`text-xl md:text-2xl font-bold mb-2 ${textColor}`}>
                 {project.name}
               </h1>
               <p className="text-base leading-6 mb-4">{project.description}</p>
@@ -265,7 +242,7 @@ const Projects = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-gray-300"
+                  className={`text-white hover:text-gray-300 ${textColor}`}
                 >
                   <BsGithub size={24} />
                 </a>
@@ -274,17 +251,17 @@ const Projects = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white hover:text-gray-300"
+                    className={`text-white hover:text-gray-300 ${textColor}`}
                   >
                     <BsArrowUpRightSquare size={24} />
                   </a>
                 )}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

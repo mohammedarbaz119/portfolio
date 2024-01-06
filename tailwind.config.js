@@ -6,9 +6,7 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors: {
-'bllue':'#1e40af'
-    },
+  
     extend: {
       keyframes: {
         'slide-up': {

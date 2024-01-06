@@ -132,7 +132,7 @@ const items: NavbarItem[] = [
   },
 ];
 
-const name: string = "Mohammed Arbaz";
+const name: string = "Portfolio";
 
 export default function NavBar() {
   const pathname = usePathname();

@@ -29,9 +29,9 @@ const Hero = () => {
   }, [controls]);
 
   return (
-    <section className="text-white bg-black py-8 sm:py-16 lg:py-24">
+    <section className="text-white bg-black py-8 sm:py-16 lg:py-24 mt-16">
       <div
-        className="container mx-auto flex flex-col-reverse sm:flex-row 
+        className="container mx-auto flex flex-col-reverse sm:flex-row sm:w-2/3
        items-center justify-center"
       >
         <motion.div
@@ -40,8 +40,9 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="sm:w-full sm:max-w-md sm:pr-8 order-2 sm:order-1 sm:mx-auto sm:p-8 text-center sm:text-left"
         >
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-gray-100">
-            Hi, I&#39;m Mohammed Arbaz!
+          <h2 className="text-3xl"> Hi, I&#39;m</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 text-gray-100">
+            Mohammed Arbaz!
           </h2>
           <motion.h4
             className="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 min-h-full text-teal-300 overflow-hidden whitespace-nowrap inline-block"
@@ -50,7 +51,7 @@ const Hero = () => {
           >
             {show}
           </motion.h4>
-          <p className="text-sm sm:text-base text-gray-300 mb-6 sm:mb-8">
+          <p className="text-sm text-center sm:text-left  mx-2 sm:mx-auto sm:text-base text-gray-300 mb-6 sm:mb-8">
             I&#39;m a third-year Computer Science student and dedicated
             full-stack developer. I specialize in crafting engaging and
             user-centric web applications, utilizing technologies like React for
@@ -73,7 +74,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="sm:w-full sm:max-w-md order-1 sm:order-2 flex items-center justify-center mb-8 sm:mb-0 sm:ml-8"
         >
-          <div className="relative rounded-full overflow-hidden w-40 h-40 sm:w-80 sm:h-80 shadow-2xl">
+          <div className="relative rounded-full overflow-hidden w-40 h-40 sm:w-80 sm:h-80 ">
             <Image
               src="/profile1.jpeg"
               alt=""
