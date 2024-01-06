@@ -143,7 +143,7 @@ const AboutSection = () => {
               Get to know me!
             </h2>
             <p className="mx-2 text-lg md:text-xl text-pink-300">
-              Hey there! I'm{" "}
+              Hey there! I&#39;m{" "}
               <span className="font-bold text-yellow-300">
                 Mohammed Arbazuddin Qureshi
               </span>
@@ -152,18 +152,17 @@ const AboutSection = () => {
             </p>
             <p className="mx-2 text-lg md:text-xl text-pink-300">
               Currently in my third year at Muffakham Jah College of Engineering
-              and Technology, I've been diving deep into the world of technology
-              and coding since the beginning of my academic journey.
+              and Technology, I&#39;ve been diving deep into the world of
+              technology and coding since the beginning of my academic journey.
             </p>
             <p className="mx-2 text-lg md:text-xl text-pink-300">
-              I specialize in building{" "}
-              <span className="font-bold text-green-400">Web Applications</span>{" "}
-              and{" "}
+              I specialize in building and{" "}
               <span className="font-bold text-green-400">
                 Mobile Applications
               </span>{" "}
               that not only meet but exceed user expectations. I believe in the
-              power of technology to make a positive impact on people's lives.
+              power of technology to make a positive impact on people&#39;s
+              lives.
             </p>
             <p className="mx-2 text-lg md:text-xl text-pink-300">
               Outside of coding, you can find me exploring the latest

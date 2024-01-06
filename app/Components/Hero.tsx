@@ -41,7 +41,7 @@ const Hero = () => {
           className="sm:w-full sm:max-w-md sm:pr-8 order-2 sm:order-1 sm:mx-auto sm:p-8 text-center sm:text-left"
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-gray-100">
-            Hi, I'm Mohammed Arbaz!
+            Hi, I&#39;m Mohammed Arbaz!
           </h2>
           <motion.h4
             className="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 min-h-full text-teal-300 overflow-hidden whitespace-nowrap inline-block"
@@ -51,11 +51,11 @@ const Hero = () => {
             {show}
           </motion.h4>
           <p className="text-sm sm:text-base text-gray-300 mb-6 sm:mb-8">
-            I'm a third-year Computer Science student and dedicated full-stack
-            developer. I specialize in crafting engaging and user-centric web
-            applications, utilizing technologies like React for the frontend and
-            Node.js for the backend. Let's collaborate to bring your ideas to
-            life!
+            I&#39;m a third-year Computer Science student and dedicated
+            full-stack developer. I specialize in crafting engaging and
+            user-centric web applications, utilizing technologies like React for
+            the frontend and Node.js for the backend. Let&#39;s collaborate to
+            bring your ideas to life!
           </p>
           <div className="flex flex-col items-center sm:items-start">
             <a
