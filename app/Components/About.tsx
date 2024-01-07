@@ -1,28 +1,6 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
-
-const skills = [
-  { skill: "HTML" },
-  { skill: "CSS" },
-  { skill: "JavaScript" },
-  { skill: "TypeScript" },
-  { skill: "React" },
-  { skill: "Mongodb" },
-  { skill: "Node.js" },
-  { skill: "Express.js" },
-  { skill: "Next.js" },
-  { skill: "Vue.js" },
-  { skill: "Tailwind CSS" },
-  { skill: "Bootstrap" },
-  { skill: "Python" },
-  { skill: "Flask" },
-  { skill: "Java" },
-  { skill: "Spring Boot" },
-  { skill: "Git" },
-  { skill: "Dart" },
-  { skill: "GitHub" },
-];
+import Image from "next/image";
 
 const AboutSection = () => {
   return (
@@ -41,7 +19,7 @@ const AboutSection = () => {
             <h2 className="text-xl md:text-3xl font-bold mb-2 text-blue-400">
               Get to know me!
             </h2>
-            <p className="mx-2 text-lg md:text-xl text-gray-300">
+            <p className=" text-lg md:text-xl text-gray-300">
               Hey there! I&#39;m{" "}
               <span className="font-bold text-white">
                 Mohammed Arbazuddin Qureshi
@@ -49,36 +27,24 @@ const AboutSection = () => {
               , a passionate and highly ambitious Computer Science student based
               in Hyderabad, India.
             </p>
-            <p className="mx-2 text-lg md:text-xl text-gray-300">
+            <p className=" text-lg md:text-xl text-gray-300">
               Currently in my third year at Muffakham Jah College of Engineering
               and Technology, I&#39;ve been diving deep into the world of
               technology and coding since the beginning of my academic journey.
             </p>
-            <p className="mx-2 text-lg md:text-xl text-gray-300">
+            <p className=" text-lg md:text-xl text-gray-300">
               I specialize in building{" "}
               <span className="font-bold text-blue-400">Web Applications</span>
             </p>
-            <p className="mx-2 text-lg md:text-xl text-gray-300">
+            <p className=" text-lg md:text-xl text-gray-300">
               Outside of coding, you can find me exploring the latest
               developments in the tech world, contributing to open-source
               projects, and enjoying a good cup of coffee while brainstorming
               innovative ideas.
             </p>
           </div>
-          <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-xl md:text-3xl font-bold mb-2 text-blue-400">
-              My Skills
-            </h2>
-            <div className="flex flex-wrap justify-center md:justify-start">
-              {skills.map((item, idx) => (
-                <p
-                  key={idx}
-                  className="bg-blue-700 px-3 py-1 mr-2 mt-2 text-white rounded font-semibold text-lg md:text-xl"
-                >
-                  {item.skill}
-                </p>
-              ))}
-            </div>
+          <div className=" w-40 h-40 sm:w-80 sm:h-80">
+            <Image src="/profile1.jpeg" alt="" width={500} height={600} />
           </div>
         </div>
       </div>

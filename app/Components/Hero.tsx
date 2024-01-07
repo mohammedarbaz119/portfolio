@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import Image from "next/image";
 
 const Hero = () => {
   const intro = [
@@ -29,10 +28,10 @@ const Hero = () => {
   }, [controls]);
 
   return (
-    <section className="text-white bg-black py-8 sm:py-16 lg:py-24 mt-16">
+    <section className="text-white bg-black py-8  mt-12 ">
       <div
-        className="container mx-auto flex flex-col-reverse sm:flex-row sm:w-2/3
-       items-center justify-center"
+        className="container mx-auto flex flex-co; sm:flex-row
+       items-center justify-center sm:justify-between"
       >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -41,7 +40,7 @@ const Hero = () => {
           className="sm:w-full sm:max-w-md sm:pr-8 order-2 sm:order-1 sm:mx-auto sm:p-8 text-center sm:text-left"
         >
           <h2 className="text-3xl"> Hi, I&#39;m</h2>
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 text-gray-100">
+          <h2 className="text-3xl sm:text-4xl  font-bold mb-4 text-gray-100">
             Mohammed Arbaz!
           </h2>
           <motion.h4
@@ -51,7 +50,7 @@ const Hero = () => {
           >
             {show}
           </motion.h4>
-          <p className="text-sm text-center sm:text-left  mx-2 sm:mx-auto sm:text-base text-gray-300 mb-6 sm:mb-8">
+          <p className="text-sm ml-4 mx-2 sm:text-left text-left sm:mx-auto sm:text-base text-gray-300 mb-6 sm:mb-8">
             I&#39;m a third-year Computer Science student and dedicated
             full-stack developer. I specialize in crafting engaging and
             user-centric web applications, utilizing technologies like React for
@@ -73,17 +72,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="sm:w-full sm:max-w-md order-1 sm:order-2 flex items-center justify-center mb-8 sm:mb-0 sm:ml-8"
-        >
-          <div className="relative rounded-full overflow-hidden w-40 h-40 sm:w-80 sm:h-80 ">
-            <Image
-              src="/profile1.jpeg"
-              alt=""
-              width={500}
-              height={500}
-              className="rounded-full"
-            />
-          </div>
-        </motion.div>
+        ></motion.div>
       </div>
     </section>
   );

@@ -6,7 +6,6 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-  
     extend: {
       keyframes: {
         'slide-up': {
@@ -33,11 +32,6 @@ module.exports = {
           '0%': { width: 0 },
           '100%': { width: '100%' },
         },
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       animation: {
         fadeIn: 'fadeIn 1s ease-out',
