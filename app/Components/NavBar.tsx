@@ -34,7 +34,7 @@ export default function NavBar() {
 
   return (
     <header
-      className={`w-full  mx-auto px-4 sm:px-20 fixed top-0 md:py-5 md:text-2xl z-50 shadow text-white bg-black `}
+      className={`w-full mx-auto  px-4 sm:px-20 fixed top-0 md:py-8 md:text-2xl z-50 shadow text-white bg-gray-900`}
     >
       <div className="justify-between md:items-end md:flex">
         <div>
@@ -53,16 +53,14 @@ export default function NavBar() {
         <div
           className={`${
             nav ? "block" : "hidden"
-          } md:flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0`}
+          } md:flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0`}
         >
-          <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+          <div className="items-center  justify-center  space-y-8 md:flex md:space-x-6 md:space-y-0 ">
             {items.map((item, idx) => (
               <Link
                 key={idx}
                 href={`#${item.page}`}
-                className={
-                  "block lg:inline-block text-white text-opacity-80 dark:text-white-100"
-                }
+                className={"block px-20 text-white text-opacity-80 "}
               >
                 {item.label}
               </Link>

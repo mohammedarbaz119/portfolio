@@ -1,4 +1,5 @@
 import AboutSection from "./Components/About";
+import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import HeroSection from "./Components/Hero";
 import Projects from "./Components/Projects";
@@ -14,6 +15,7 @@ export default function Home() {
       <Skills skills={skills} />
       <SectionHeading>My projects</SectionHeading>
       <Projects />
+      <Contact />
       <Footer />
     </>
   );
