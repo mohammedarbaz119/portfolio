@@ -4,17 +4,14 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <section
-      id="about"
-      className="bg-gray-900 text-white py-8 md:py-16 lg:py-24"
-    >
+    <section id="about" className="bg-black text-white py-8 md:py-16 lg:py-24">
       <div className="container mx-auto">
         <h1 className="text-center font-bold text-4xl md:text-6xl mb-4 text-blue-500">
           About Me
-          <hr className="w-6 h-1 mx-auto my-2 bg-yellow-300 border-0 rounded"></hr>
+          <hr className="w-6 h-1 mx-auto my-2 bg-gray-400 border-0 rounded"></hr>
         </h1>
 
-        <div className="flex flex-col space-y-4 items-center justify-center md:space-x-4 md:space-y-0 md:p-4 md:flex-row md:text-left">
+        <div className="flex flex-col space-y-4 px-3 items-center justify-center md:space-x-4 md:space-y-0 md:p-4 md:flex-row md:text-left">
           <div className="md:w-1/2 text-lg md:text-2xl">
             <h2 className="text-xl md:text-3xl font-bold mb-2 text-blue-400">
               Get to know me!

@@ -152,7 +152,7 @@
 "use client";
 
 import { useRef } from "react";
-import { projects } from "../projectdata";
+import { projects } from "../ProjectAndSkillData";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
@@ -204,6 +204,7 @@ export default function Project({
           alt="Project I worked on"
           quality={95}
           width={300}
+          loading="lazy"
           height={300}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 
