@@ -21,6 +21,10 @@ const items: navbar_items[] = [
     label: "Projects",
     page: "projects",
   },
+  {
+    label: "Contact",
+    page: "contact",
+  },
 ];
 const name: string = "Mohammed Arbaz";
 
@@ -34,38 +38,38 @@ export default function NavBar() {
 
   return (
     <header
-      className={`w-full mx-auto  px-4 sm:px-20 fixed top-0 md:py-8 md:text-2xl z-50 shadow text-white bg-gray-900`}
+      className={`w-full mx-auto  px-4 sm:px-20 fixed top-0 md:py-6 md:text-2xl z-50 shadow text-white bg-gray-900`}
     >
       <div className="justify-between md:items-end md:flex">
-        <div>
-          <div className="flex items-center justify-between py-2 md:block">
-            <div className="md:hidden ml-auto">
-              <button
-                onClick={toggleNav}
-                className="p-2 text-white rounded-md outline-none focus:border-gray-400 focus:border"
-              >
-                {nav ? <IoMdClose /> : <IoMdMenu />}
-              </button>
-            </div>
+        <div className="flex items-center justify-between py-3 md:py-0 md:block">
+          <div className="md:hidden ml-auto">
+            <button
+              onClick={toggleNav}
+              className="p-2 text-white rounded-md outline-none focus:border-gray-400 focus:border"
+            >
+              {nav ? <IoMdClose /> : <IoMdMenu />}
+            </button>
           </div>
         </div>
+      </div>
 
-        <div
-          className={`${
-            nav ? "block" : "hidden"
-          } md:flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0`}
-        >
-          <div className="items-center  justify-center  space-y-8 md:flex md:space-x-6 md:space-y-0 ">
-            {items.map((item, idx) => (
-              <Link
-                key={idx}
-                href={`#${item.page}`}
-                className={"block px-20 text-white text-opacity-80 "}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
+      <div
+        className={`${
+          nav ? "block" : "hidden"
+        } md:flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0`}
+      >
+        <div className="items-center  justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 ">
+          {items.map((item, idx) => (
+            <Link
+              key={idx}
+              href={`#${item.page}`}
+              className={
+                "block md:px-16 text-white text-opacity-80 hover:text-opacity-100 hover:text-cyan-300 "
+              }
+            >
+              {item.label}
+            </Link>
+          ))}
         </div>
       </div>
     </header>

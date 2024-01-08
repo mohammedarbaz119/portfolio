@@ -7,10 +7,7 @@ import Project from "./Project";
 
 export default function Projects() {
   return (
-    <section
-      id="projects"
-      className=" flex items-center justify-center bg-black text-white pb-6"
-    >
+    <section className=" flex items-center justify-center bg-black text-white pb-6">
       <div>
         {projects.map((project, index) => (
           <React.Fragment key={index}>
