@@ -38,7 +38,7 @@ export default function NavBar() {
     >
       <div className="justify-between md:items-end md:flex">
         <div>
-          <div className="flex items-center justify-between py-3 md:block">
+          <div className="flex items-center justify-between py-2 md:block">
             <div className="md:hidden ml-auto">
               <button
                 onClick={toggleNav}
