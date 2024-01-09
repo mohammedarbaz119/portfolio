@@ -50,38 +50,15 @@ interface ProjectDescription {
 
 export const projects: ProjectDescription[] = [
   {
-    name: "Prioritize Future",
+    name: "MovieReviews",
     description:
-      "Prioritizing tasks is a critical skill for effective time management. By prioritizing tasks, you can ensure that you are spending your time on the most important and urgent tasks, rather than getting bogged down in less important ones.",
-    imageUrl: "/proiritze.jpg",
-    tech: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/Mubashir-Md/Prioritize-Future",
-    link: "https://prioritizefuture.com/",
+      "MovieReviews is a web app where users can see the reviews of the movies and can also add their reviews.",
+    imageUrl: "/reviewsapp.png",
+    tech: ["React.js", "Spring boot", "MongoDB"],
+    github: "https://github.com/mohammedarbaz119/Spring-Boot",
   },
-  {
-    name: "Blog App",
-    description:
-      "Blog App is a web app where users can share their posts and follow others to see their content.",
-    imageUrl: "/bloglite.jpg",
-    tech: ["HTML", "Jinja2", "Flask", "Bootstrap", "SQLite"],
-    github: "https://github.com/asdsyd/bloglite",
-  },
-  {
-    name: "Notes App",
-    description:
-      "Notes App is a web app where we can create notes for ourselves.",
-    imageUrl: "/notes.png",
-    tech: ["React.js", "TypeScript", "CSS"],
-    github: "https://github.com/mohammedarbaz119/Notes-App",
-  },
-  {
-    name: "Portfolio",
-    description: "This is my portfolio website",
-    imageUrl: "/portfolio.png",
-    tech: ["React.js", "Next.js", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/mohammedarbaz119/portfolio",
-    link: "https://portfolio-mohammedarbaz119.vercel.app/",
-  },
+  
+  
   {
     name: "cropSmart",
     description:
@@ -92,11 +69,47 @@ export const projects: ProjectDescription[] = [
     link: "https://cropsmart-r9fx.onrender.com/",
   },
   {
-    name: "MovieReviews",
+    name: "Blog App",
     description:
-      "MovieReviews is a web app where users can see the reviews of the movies and can also add their reviews.",
-    imageUrl: "/reviewsapp.png",
-    tech: ["React.js", "Spring boot", "MongoDB"],
-    github: "https://github.com/mohammedarbaz119/Spring-Boot",
+      "Blog App is a web app where users can share their posts and follow others to see their content.",
+    imageUrl: "/bloglite.jpg",
+    tech: ["HTML", "Jinja2", "Flask", "Bootstrap", "SQLite"],
+    github: "https://github.com/asdsyd/bloglite",
   },
+  {
+    name: "Portfolio",
+    description: "This is my portfolio website",
+    imageUrl: "/portfolio2.png",
+    tech: ["React.js", "Next.js", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/mohammedarbaz119/portfolio",
+    link: "https://portfolio-mohammedarbaz119.vercel.app/",
+  },
+  {
+    name: "Notes App",
+    description:
+      "Notes App is a web app where we can create notes for ourselves.",
+    imageUrl: "/notes.png",
+    tech: ["React.js", "TypeScript", "CSS"],
+    github: "https://github.com/mohammedarbaz119/Notes-App",
+  },
+  {
+    name: "TicketShow",
+    description:
+      "TicketShow is a web app where users can book tickets for movies and can also see the reviews of the movies.",
+    tech: ["Vue.js", "CSS","Flask", "SqlLite", "HTML","Redis"],
+    github: "https://github.com/asdsyd/appdev2",
+    imageUrl: "/TicketShow.jpeg",
+  },
+  
+  
+  {
+    name: "Prioritize Future",
+    description:
+      "Prioritizing tasks is a critical skill for effective time management. By prioritizing tasks, you can ensure that you are spending your time on the most important and urgent tasks, rather than getting bogged down in less important ones.",
+    imageUrl: "/proiritze.jpg",
+    tech: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/Mubashir-Md/Prioritize-Future",
+    link: "https://prioritizefuture.com/",
+  },
+
 ];

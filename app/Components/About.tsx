@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="bg-black text-purple-300 py-8 md:py-16 lg:py-24"
+      className="bg-gray-900 text-purple-300  py-8 md:py-16 lg:py-24"
     >
       <div className="container mx-auto">
         <h1 className="text-center font-bold text-4xl md:text-6xl mb-4 text-purple-400">

@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./SectionHeading";
 import { projects } from "@/app/ProjectAndSkillData";
 import Project from "./Project";
 
