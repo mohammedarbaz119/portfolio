@@ -7,37 +7,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      keyframes: {
-        'slide-up': {
-          '0%': {
-            transform: 'translateY(50%)'
-          },
-          '100%': {
-            transform: 'translateY(0)'
-          }
-        },
-        blink: {
-          "50%": {
-            borderColor: "transparent"
-          },
-          "100%": {
-            borderColor: "black"
-          }
-        },
-        fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
-        },
-        typing: {
-          '0%': { width: 0 },
-          '100%': { width: '100%' },
-        },
-      },
-      animation: {
-        fadeIn: 'fadeIn 1s ease-out',
-        typing: 'typing 2s steps(20, end) infinite',
-        'slide-up': 'slide-up 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards',
-      },
+      
     },
   },
   plugins: [],

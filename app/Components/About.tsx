@@ -19,7 +19,7 @@ const AboutSection = () => {
             <h2 className="text-xl md:text-3xl font-bold mb-2 text-purple-400">
               Get to know me!
             </h2>
-            <p className="text-lg md:text-xl text-gray-300">
+            <p className="text-sm md:text-xl text-gray-300">
               Hey there! I&#39;m{" "}
               <span className="font-bold text-purple-400">
                 Mohammed Arbazuddin Qureshi
@@ -27,18 +27,18 @@ const AboutSection = () => {
               , a passionate and highly ambitious Computer Science student based
               in Hyderabad, India.
             </p>
-            <p className="text-lg md:text-xl text-gray-300">
+            <p className="text-sm md:text-xl text-gray-300">
               Currently in my third year at Muffakham Jah College of Engineering
               and Technology, I&#39;ve been diving deep into the world of
               technology and coding since the beginning of my academic journey.
             </p>
-            <p className="text-lg md:text-xl text-gray-300">
+            <p className="text-sm md:text-xl text-gray-300">
               I specialize in building{" "}
               <span className="font-bold text-purple-400">
                 Web Applications
               </span>
             </p>
-            <p className="text-lg md:text-xl text-gray-300">
+            <p className="text-sm md:text-xl text-gray-300">
               Outside of coding, you can find me exploring the latest
               developments in the tech world, contributing to open-source
               projects, and enjoying a good cup of coffee while brainstorming

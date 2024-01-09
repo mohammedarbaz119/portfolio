@@ -95,7 +95,7 @@ export const projects: ProjectDescription[] = [
     name: "MovieReviews",
     description:
       "MovieReviews is a web app where users can see the reviews of the movies and can also add their reviews.",
-    imageUrl: "/rveiewsapp.png",
+    imageUrl: "/reviewsapp.png",
     tech: ["React.js", "Spring boot", "MongoDB"],
     github: "https://github.com/mohammedarbaz119/Spring-Boot",
   },

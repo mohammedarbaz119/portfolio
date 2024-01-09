@@ -32,7 +32,7 @@ const Hero = () => {
   }, [controls]);
 
   return (
-    <section className="text-white bg-gray-900 w-full md:h-screen text-center py-8 mt-12">
+    <section className="text-white bg-gray-900 w-full lg:h-screen text-center py-8 mt-12">
       <div
         className="container flex flex-col md:flex-row
        items-center justify-center w-full h-full mx-auto px-8 "
@@ -41,20 +41,22 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className=" md:max-w-[810px] sm:pr-8 md:mx-auto text-center md:text-left"
+          className=" md:w-[810px] w-screen sm:pr-8 md:mx-auto text-center md:text-left"
         >
-          <h2 className="text-3xl md:text-5xl md:mb-5 mb-3 md:pl-24">
+          <h2 className="text-xl md:text-4xl md:mb-5 md:px-3 px-3 mb-3 text-center whitespace-nowrap">
             {" "}
             Hi, I&#39;m Mohammed Arbaz!
           </h2>
+
           <motion.h4
-            className="text-xl w-full md:text-6xl font-semibold mb-6 sm:mb-8 min-h-full text-teal-300 overflow-hidden whitespace-nowrap flex justify-center items-center"
+            className="text-2xl w-full md:text-5xl  font-semibold mb-6 sm:mb-8 min-h-full text-teal-300 overflow-hidden whitespace-nowrap flex justify-center items-center"
             initial={{ opacity: 1, scale: 1 }}
             animate={controls}
           >
             {show}
           </motion.h4>
-          <p className="md:text-2xl text-sm md:ml-4 mx-2 text-center md:mx-auto  text-gray-300 mb-6 sm:mb-8">
+
+          <p className="md:text-xl text-sm md:ml-4 mx-2 text-center md:mx-auto text-gray-300 mb-6 sm:mb-8">
             I&#39;m a Fourth-year Computer Science student and dedicated
             full-stack developer. I specialize in crafting engaging and
             user-centric web applications, utilizing technologies like React for
