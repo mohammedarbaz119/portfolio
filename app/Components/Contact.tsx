@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="mx-auto bg-black py-24 px-2">
+    <section id="contact" className="mx-auto bg-gray-900 py-24 px-2">
       <div className="mx-auto w-3/4 md:w-2/5">
         <>
           <h1 className="text-white text-4xl font-bold mb-6 text-center">
