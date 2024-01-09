@@ -4,7 +4,7 @@ import type { AllSkill, SkillSingle as puchi } from "../ProjectAndSkillData";
 
 const Skills = ({ skills }: { skills: AllSkill }) => {
   return (
-    <div id="skills" className="w-full lg:h-screen p-2 md:py-16 bg-black">
+    <div id="skills" className="w-full lg:h-screen p-2 md:py-16 bg-gray-900">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl md:text-4xl tracking-widest uppercase text-[#5651e5] ">
           Skills

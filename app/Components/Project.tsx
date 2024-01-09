@@ -12,6 +12,8 @@ export default function Project({
   description,
   tech,
   imageUrl,
+  github,
+  link,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -45,6 +47,18 @@ export default function Project({
                 {tag}
               </li>
             ))}
+            <li className="bg-gray-500 px-3 font-black py-1 text-[0.7rem]  tracking-wider text-white rounded-full dark:text-white/70">
+              <a href={github} target="_blank" rel="noopener noreferrer">
+                {"github"}
+              </a>
+            </li>
+            {link && (
+              <li className="bg-cyan-400 px-3 py-1 text-[0.7rem] font-black  tracking-wider text-white rounded-full dark:text-white/70">
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  {"live"}
+                </a>
+              </li>
+            )}
           </ul>
         </div>
 
@@ -72,3 +86,69 @@ export default function Project({
     </motion.div>
   );
 }
+// const Projects = () => {
+//   const textColor = "text-blue-400";
+
+//   return (
+//     <>
+//       <section id="projects" className="bg-black text-white py-8 md:py-10">
+//         <div className="container mx-auto">
+//           <h1 className="my-6 text-center font-bold text-4xl md:text-5xl text-white">
+//             My Projects
+//             <hr className="w-16 h-1 mx-auto my-2 bg-white border-0 rounded"></hr>
+//           </h1>
+
+//           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+//             {projects.map((project, idx) => (
+//               <div
+//                 key={idx}
+//                 className={`rounded-lg p-6 border border-blue-500`}
+//               >
+//                 <h1
+//                   className={`text-xl md:text-2xl font-bold mb-2 ${textColor}`}
+//                 >
+//                   {project.name}
+//                 </h1>
+//                 <p className="text-base leading-6 mb-4">
+//                   {project.description}
+//                 </p>
+//                 <div className="flex flex-wrap mb-4">
+//                   {project.tech?.map((tech, index) => (
+//                     <span
+//                       key={index}
+//                       className="bg-gray-600 px-2 py-1 mr-2 mb-2 text-sm text-gray-300 rounded"
+//                     >
+//                       {tech}
+//                     </span>
+//                   ))}
+//                 </div>
+//                 <div className="flex space-x-2">
+//                   <a
+//                     href={project.github}
+//                     target="_blank"
+//                     rel="noopener noreferrer"
+//                     className={`text-white hover:text-gray-300 ${textColor}`}
+//                   >
+//                     <BsGithub size={24} />
+//                   </a>
+//                   {project.link && (
+//                     <a
+//                       href={project.link}
+//                       target="_blank"
+//                       rel="noopener noreferrer"
+//                       className={`text-white hover:text-gray-300 ${textColor}`}
+//                     >
+//                       <BsArrowUpRightSquare size={24} />
+//                     </a>
+//                   )}
+//                 </div>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+//     </>
+//   );
+// };
+
+// export default Projects;
