@@ -62,7 +62,7 @@ export const projects: ProjectDescription[] = [
   {
     name: "cropSmart",
     description:
-      "Project uses machine learning for Crop and Fertilizer Recommendations using soil data. Also employs imageUrl recognition for rapid crop disease diagnosis from user-uploaded images, enhancing agricultural productivity..",
+    "Project uses ML for crop and fertilizer recommendations with plant disease recogniton for crop diagnosis, boosting agricultural productivity.",
     imageUrl: "/cropsmaart.png",
     tech: ["Flask", "Python", "HTML", "CSS", "JavaScript", "Scikit-learn"],
     github: "https://github.com/nihal3000/harvestify",
