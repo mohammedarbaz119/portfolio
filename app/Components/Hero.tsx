@@ -87,11 +87,11 @@ const Hero = () => {
                 <AiOutlineMail />
               </div>
             </Link>
-            <Link href="/resume.pdf" download="resume.pdf">
+            <a href="/resume.pdf" download="resume.pdf">
               <div className="rounded-full shadow-lg md:text-3xl  shadow-gray-500 bg-gray-800 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <BsFillPersonLinesFill />
               </div>
-            </Link>
+            </a>
           </div>
         </motion.div>
       </div>
