@@ -69,7 +69,7 @@ const Hero = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg md:text-3xl bg-gray-800 shadow-gray-500 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full shadow-lg md:text-3xl text-lg bg-gray-800 shadow-gray-500 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
               </div>
             </a>
@@ -78,17 +78,17 @@ const Hero = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full md:text-3xl  bg-gray-800 shadow-lg shadow-gray-500 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full md:text-3xl text-lg bg-gray-800 shadow-lg shadow-gray-500 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
               </div>
             </a>
             <Link href="/#contact">
-              <div className="rounded-full shadow-lg md:text-3xl  shadow-gray-500 bg-gray-800 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full shadow-lg md:text-3xl text-lg shadow-gray-500 bg-gray-800 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
               </div>
             </Link>
             <a href="/resume.pdf" download="resume.pdf">
-              <div className="rounded-full shadow-lg md:text-3xl  shadow-gray-500 bg-gray-800 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full shadow-lg md:text-3xl text-lg shadow-gray-500 bg-gray-800 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <BsFillPersonLinesFill />
               </div>
             </a>

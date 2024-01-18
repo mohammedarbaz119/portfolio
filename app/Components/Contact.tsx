@@ -7,6 +7,14 @@ const Contact = () => {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    if (
+      form.current?.from_name.value === "" ||
+      form.current?.email.value === "" ||
+      form.current?.subject.value === "" ||
+      form.current?.message.value === ""
+    ) {
+      alert("Please fill all the fields!");
+    }
     emailjs
       .sendForm(
         "service_9gdw7r1",
