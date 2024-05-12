@@ -84,14 +84,7 @@ export const projects: ProjectDescription[] = [
     github: "https://github.com/mohammedarbaz119/portfolio",
     link: "https://portfolio-mohammedarbaz119.vercel.app/",
   },
-  {
-    name: "Notes App",
-    description:
-      "Notes App is a web app where we can create notes for ourselves.",
-    imageUrl: "/notes.png",
-    tech: ["React.js", "TypeScript", "CSS"],
-    github: "https://github.com/mohammedarbaz119/Notes-App",
-  },
+ 
   {
     name: "TicketShow",
     description:
@@ -102,14 +95,6 @@ export const projects: ProjectDescription[] = [
   },
   
   
-  {
-    name: "Prioritize Future",
-    description:
-      "Prioritizing tasks is a critical skill for effective time management. By prioritizing tasks, you can ensure that you are spending your time on the most important and urgent tasks, rather than getting bogged down in less important ones.",
-    imageUrl: "/proiritze.jpg",
-    tech: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/Mubashir-Md/Prioritize-Future",
-    link: "https://prioritizefuture.com/",
-  },
+ 
 
 ];
